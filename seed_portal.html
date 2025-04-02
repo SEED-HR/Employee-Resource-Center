@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SEED Foundation Employee Portal</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --seed-blue: #2C3E88;
+      --seed-blue-dark: #1f2c61;
+      --footer-accent: #dbe3f5;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #f4f4f4, #e9e9f0);
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .container {
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+      margin-bottom: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: var(--seed-blue);
+    }
+    .button {
+      background-color: var(--seed-blue);
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .button:hover {
+      background-color: var(--seed-blue-dark);
+      transform: translateY(-2px);
+    }
+    footer {
+      background-color: var(--footer-accent);
+      color: var(--seed-blue);
+      text-align: center;
+      padding: 16px;
+      font-size: 0.9em;
+      border-top: 2px solid var(--seed-blue);
+      width: 100%;
+      box-sizing: border-box;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .material-icons {
+      color: #2C3E88;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h2><span class="material-icons">home</span>Welcome!</h2>
+      <p>Welcome to the SEED Foundation Employee Portal. Here you can find important company information, resources, and tools to help you succeed.</p>
+      <a href="#benefits" class="button">Explore Benefits</a>
+    </section>
+    <section id="benefits">
+      <h2><span class="material-icons">health_and_safety</span>Employee Benefits</h2>
+      <ul>
+        <li><a href="https://www.employeenavigator.com/identity/Account/Login" target="_blank">Benefits Portal</a></li>
+        <li><strong>Benefit Documents (Coming Soon)</strong></li>
+      </ul>
+    </section>
+    <section>
+      <h2><span class="material-icons">folder</span>Resources</h2>
+      <ul>
+        <li><a href="https://access.paylocity.com/" target="_blank">Paylocity (Payroll and Time Management)</a></li>
+        <li><strong>Company Documents (Coming Soon)</strong></li>
+        <li><a href="https://www.seedfoundation.com" target="_blank">Company Website</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2><span class="material-icons">school</span>Training and Development</h2>
+      <ul>
+        <li>Online Courses (Coming Soon)</li>
+        <li>Workshops (Coming Soon)</li>
+        <li>Mentorship Programs (Coming Soon)</li>
+      </ul>
+    </section>
+    <section>
+      <h2><span class="material-icons">group</span>Employee Directory</h2>
+      <p>Link to employee directory tool: <a href="#">Coming Soon</a></p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 SEED Foundation. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
