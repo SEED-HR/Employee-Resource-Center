@@ -1,10 +1,15 @@
-/* Custom stylesheet */
+/* Custom stylesheet, add your own styles here */
 
 /* Override theme's list styling using theme's content class */
 .page__content ul, 
 .page__content ol {
   text-align: left !important;     /* Keep text left-aligned */
   list-style-position: outside;  /* Ensure bullets are outside text flow (browser default) */
-  padding-left: 2em !important;   /* Add indentation (adjust value like 1.5em, 40px if needed) */
+  padding-left: 2em !important;   /* Add indentation (adjust value if needed) */
   margin-left: 0;              /* Ensure no extra margin is causing issues */
+} 
+
+/* Change header/masthead background to SEED Foundation Blue */
+.masthead {
+  background-color: #203688 !important; /* SEED Foundation Blue from Style Guide [cite: 19] */
 }
