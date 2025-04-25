@@ -9,7 +9,7 @@
   margin-left: 0;              /* Ensure no extra margin is causing issues */
 } 
 
-/* Change header/masthead background to SEED Foundation Blue */
-.masthead {
-  background-color: #203688 !important; /* SEED Foundation Blue from Style Guide [cite: 19] */
+/* Change header background targeting inner wrap */
+.masthead__inner-wrap {
+  background-color: #203688 !important; /* SEED Foundation Blue */
 }
