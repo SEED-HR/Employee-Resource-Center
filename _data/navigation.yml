@@ -1,28 +1,29 @@
 # _data/navigation.yml
 
-- title: Home
-  url: / # Links to the base URL of your site
+main: # <-- Add this top-level key
+  - title: Home # <-- Indent this list item
+    url: /     # <-- Indent title and url under the list item
 
-- title: Policies
-  url: /policies.html # Or adjust URL if needed later based on theme
+  - title: Policies
+    url: /policies.html
 
-- title: Benefits
-  url: /benefits.html
+  - title: Benefits
+    url: /benefits.html
 
-- title: Payroll
-  url: /payroll.html
+  - title: Payroll
+    url: /payroll.html
 
-- title: Training
-  url: /training.html
+  - title: Training
+    url: /training.html
 
-- title: Announcements
-  url: /announcements.html
+  - title: Announcements
+    url: /announcements.html
 
-- title: Posters
-  url: /labor-law-posters.html
+  - title: Posters
+    url: /labor-law-posters.html
 
-- title: Forms
-  url: /forms.html
+  - title: Forms
+    url: /forms.html
 
-- title: Directory
-  url: /directory.html
+  - title: Directory
+    url: /directory.html
