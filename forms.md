@@ -7,9 +7,7 @@ title: Forms Library
 
 Find commonly used company forms below.
 
-{% comment %}
 *(Instructions: Add links to downloadable forms (PDFs uploaded to assets/files) or links to online form services. Categorize if helpful.)*
-{% endcomment %}
 
 * [Form Name 1 Placeholder] {% comment %}([Link TBD]){% endcomment %}
 * [Form Name 2 Placeholder] {% comment %}([Link TBD]){% endcomment %}
