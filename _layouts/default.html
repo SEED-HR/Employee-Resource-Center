@@ -1,25 +1,10 @@
----
----
-
 <!doctype html>
-<!--
-  OneFlow Jekyll Theme 1.1 by Per Starke
-  Copyright 2024 Per Starke - https://perstarke-webdev.de/
-  Free for personal and commercial use under the MIT license
-  https://opensource.org/license/mit/
--->
-
-<!--
-  Based on Minimal Mistakes Jekyll Theme.
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose.
-  Copyright 2013-2021 Michael Rose - mademistakes.com | @mmistakes
-  Licensed under MIT.
--->
-
 <html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    
+    <link rel="stylesheet" href="{{ '/assets/css/custom-styles.css' | relative_url }}">
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -27,24 +12,19 @@
 
 
     <style>
-
+        /* Styles for background image if used - can likely ignore/remove if not using background image */
         .bg {
           background-image: url({{site.background-image}});
         }
-
         .bg::after {
            background-color: {{site.background-image-overlay}};
         }
-
         {% if site.background-image-mobile %}
-
         @media (max-width: 768px) {
           .bg {
             background-image: url({{site.background-image-mobile}});
           }
-
-         {% endif %}
-
+        {% endif %}
         }
     </style>
 
@@ -58,8 +38,7 @@
         {% endif %}
 
       <div class="initial-content">
-        {{ content }}
-      </div>
+        {{ content }} </div>
 
       <div id="footer" class="page__footer">
         <footer>
