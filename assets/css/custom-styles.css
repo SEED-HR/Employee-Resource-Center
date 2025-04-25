@@ -1,9 +1,10 @@
-/* Custom stylesheet, add your own styles here */
+/* Custom stylesheet */
 
-/* Override theme's list styling in main content */
-main ul,
-main ol {
-  text-align: left !important;  /* Force text alignment to the left */
-  padding-left: 40px !important; /* Restore typical browser indentation for bullets/numbers */
-  /* You might need to adjust the 40px value */
+/* Override theme's list styling using theme's content class */
+.page__content ul, 
+.page__content ol {
+  text-align: left !important;     /* Keep text left-aligned */
+  list-style-position: outside;  /* Ensure bullets are outside text flow (browser default) */
+  padding-left: 2em !important;   /* Add indentation (adjust value like 1.5em, 40px if needed) */
+  margin-left: 0;              /* Ensure no extra margin is causing issues */
 }
