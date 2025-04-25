@@ -1,18 +1,28 @@
-# main links
-main:
-  - title: "Theme Documentation"
-    url: https://perstarke-webdev.de/oneflow-jekyll-theme
-    blank: true
-    description: "The documentation for this theme, on https://perstarke-webdev.de"
-  - title: "Section 1"
-    url: /#section-1
-    blank: false
-  - title: "Section 2"
-    url: /#section-2
-    blank: false
-  - title: "Section 3"
-    url: /#section-3
-    blank: false
-  - title: "Section 4"
-    url: /#section-4
-    blank: false
+# _data/navigation.yml
+
+- title: Home
+  url: / # Links to the base URL of your site
+
+- title: Policies
+  url: /policies.html # Or adjust URL if needed later
+
+- title: Benefits
+  url: /benefits.html
+
+- title: Payroll
+  url: /payroll.html
+
+- title: Training
+  url: /training.html
+
+- title: Announcements
+  url: /announcements.html
+
+- title: Posters
+  url: /labor-law-posters.html
+
+- title: Forms
+  url: /forms.html
+
+- title: Directory
+  url: /directory.html
