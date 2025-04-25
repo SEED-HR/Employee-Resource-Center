@@ -1,18 +1,57 @@
----
-layout: page
-title: Forms Library
----
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
 
-# Forms Library
+    <link rel="stylesheet" href="{{ '/assets/css/custom-styles.css' | relative_url }}">
+  </head>
 
-Find commonly used company forms below. Please download the latest version as needed.
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached masthead.html %}
 
-{% comment %}
-*(Instructions: Add links to downloadable forms (PDFs uploaded to assets/files) or links to online form services. Categorize if helpful.)*
-{% endcomment %}
 
-* [Form Name 1 Placeholder] {% comment %}([Link TBD]){% endcomment %}
-* [Form Name 2 Placeholder] {% comment %}([Link TBD]){% endcomment %}
-* [Form Name 3 Placeholder] {% comment %}([Link TBD]){% endcomment %}
+    <style>
+        /* Styles for background image if used - can likely ignore/remove if not using background image */
+        .bg {
+          background-image: url({{site.background-image}});
+        }
+        .bg::after {
+           background-color: {{site.background-image-overlay}};
+        }
+        {% if site.background-image-mobile %}
+        @media (max-width: 768px) {
+          .bg {
+            background-image: url({{site.background-image-mobile}});
+          }
+        {% endif %}
+        }
+    </style>
 
-If you cannot find the form you need, please contact HR or the relevant department.
+
+    {% if site.background-image %}
+      <div class="bg">
+    {% endif %}
+
+        {% if site.show-popup %}
+        {% include popup.html %}
+        {% endif %}
+
+      <div class="initial-content">
+        {{ content }} </div>
+
+      <div id="footer" class="page__footer">
+        <footer>
+          {% include footer/custom.html %}
+          {% include_cached footer.html %}
+        </footer>
+      </div>
+
+    {% if site.background-image %}
+      </div>
+    {% endif %}
+
+    {% include scripts.html %}
+
+  </body>
+</html>
