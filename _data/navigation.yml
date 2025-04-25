@@ -4,7 +4,7 @@
   url: / # Links to the base URL of your site
 
 - title: Policies
-  url: /policies.html # Or adjust URL if needed later
+  url: /policies.html # Or adjust URL if needed later based on theme
 
 - title: Benefits
   url: /benefits.html
