@@ -1,1 +1,9 @@
 /* Custom stylesheet, add your own styles here */
+
+/* Override theme's list styling in main content */
+main ul,
+main ol {
+  text-align: left !important;  /* Force text alignment to the left */
+  padding-left: 40px !important; /* Restore typical browser indentation for bullets/numbers */
+  /* You might need to adjust the 40px value */
+}
